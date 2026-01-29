@@ -27,8 +27,8 @@ jobs:
       - name: Begin analysis
         run: >
           dotnet sonarscanner begin
-          /k:"your-project"
-          /o:"your-org"
+          /k:"sample-dotnet-sonar"
+          /o:"sonar-brettmiller"
           /d:sonar.host.url="https://sonarcloud.io"
           /d:sonar.token="$SONAR_TOKEN"
       - name: Build
